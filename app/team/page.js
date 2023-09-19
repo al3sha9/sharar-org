@@ -1,295 +1,157 @@
-import Image from 'next/image'
-import ALISHAN from '../../public/1.png'
-import FASIH from '../../public/fasih.png'
-import SIDRA from '../../public/sidra.png'
-import FARZEEN from '../../public/farzeen.png'
-import ZEESHAN from '../../public/zeeshan.png'
-import SERENA from '../../public/serena.png'
+import Image from 'next/image';
+import ALISHAN from '../../public/1.png';
+import NASIR from '../../public/nasir.png';
+import FASIH from '../../public/fasih.png';
+import SIDRA from '../../public/sidra.png';
+import FARZEEN from '../../public/farzeen.png';
+import ZEESHAN from '../../public/zeeshan.png';
+import SERENA from '../../public/serena.png';
+import ALI from '../../public/ali.png';
+import PERVEZ from '../../public/pervez.png';
+import MARIA from '../../public/maria.png';
+
+// Define an array of team members with their information
+const teamMembers = [
+  {
+    name: 'Fasih Uddin',
+    role: 'Founder and Lead',
+    imageSrc: FASIH,
+  },
+  {
+    name: 'Sidra',
+    role: 'IT LEAD',
+    imageSrc: SIDRA,
+  },
+  {
+    name: 'Zeeshan Ali',
+    role: 'Head of Marketing team',
+    imageSrc: ZEESHAN,
+  },
+  {
+    name: 'Farzeen',
+    role: 'Head of Communications',
+    imageSrc: FARZEEN,
+  },
+  {
+    name: 'Ali Mohammad',
+    role: 'Finance Lead',
+    imageSrc: ALI,
+  },
+];
+
+const otherTeamMembers = [
+  {
+    name: 'Ali Shan',
+    role: 'Team Media and IT',
+    imageSrc: ALISHAN,
+  },
+  {
+    name: 'Nasir',
+    role: 'Team Media and IT',
+    imageSrc: NASIR,
+  },
+  {
+    name: 'Serena',
+    role: 'Team Finance',
+    imageSrc: SERENA,
+  },
+  {
+    name: 'Pervez Uddin',
+    role: 'Team Media and IT',
+    imageSrc: PERVEZ,
+  },
+  {
+    name: 'Alice Melbourne',
+    role: 'Human Resources',
+    imageSrc: MARIA,
+  },
+];
+
+function TeamMember({ name, role, imageSrc }) {
+  return (
+    <div>
+      <div className="hover:shadow-2xl relative rounded-full shadow bg-[#135858] overflow-hidden">
+        <Image
+          className="relative w-full h-full rounded transition-transform transform scale-100 hover:scale-110"
+          src={imageSrc}
+          alt={name}
+        />
+      </div>
+      <div className="flex flex-col sm:text-center">
+        <p className="text-lg font-bold font-pop">{name}</p>
+        <p className="mb-5 text-xs text-gray-800">{role}</p>
+        <div className="flex items-center space-x-3 sm:justify-center">
+          <a
+            href="/"
+            className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+          >
+            <span className="fa-brands fa-linkedin text-xl"></span>
+          </a>
+          <a
+            href="/"
+            className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+          >
+            <span className="fa-brands fa-twitter text-xl"></span>
+          </a>
+          <a
+            href="/"
+            className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+          >
+            <span className="fa-regular fa-envelope text-xl"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Leads() {
+  return (
+    <div className="grid w-[100%] gap-5 mx-auto pb-10 sm:grid-cols-2 lg:grid-cols-5 lg:max-w-screen-lg">
+      {teamMembers.map((member, index) => (
+        <TeamMember key={index} {...member} />
+      ))}
+    </div>
+  );
+}
+
+function OtherTeam() {
+  return (
+    <div className="flex flex-wrap justify-center mx-auto py-5 sm:flex-col sm:gap-0 sm:space-x-10 md:flex-row lg:flex-none lg:flex-row lg:space-x-10 text-center lg:max-w-screen-lg">
+      {otherTeamMembers.map((member, index) => (
+        <div key={index} className="flex flex-col items-center py-4 mt-10 sm:mt-0">
+          <div className="hover:shadow-2xl relative rounded shadow bg-[#135858] overflow-hidden">
+            <Image
+              className="relative w-[160px] h-[160px] rounded transition-transform transform scale-100 hover:scale-110"
+              src={member.imageSrc}
+              alt={member.name}
+            />
+          </div>
+          <p className="text-lg font-bold mt-3 font-pop">{member.name}</p>
+          <p className="text-xs text-gray-800">{member.role}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+
 export default function TEAM() {
   return (
-
     <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-6xl md:px-8 lg:px-2">
-    <div className="mx-auto lg:max-w-xl sm:text-center">
-      <p className="inline-block px-3 py-px mb-4 text-3xl font-semibold font-pop tracking-wider text-teal-900 uppercase rounded bg-teal-accent-400">
-        Sharar Organization Leads
-      </p>
-
+      <div className="mx-auto lg:max-w-xl sm:text-center">
+        <p className="inline-block px-3 py-px mb-4 text-3xl font-semibold font-pop tracking-wider text-teal-900 uppercase rounded bg-teal-accent-400">
+          Sharar Organization Leads
+        </p>
+      </div>
+      <Leads />
+      <hr />
+      <div className="mx-auto pt-4 lg:max-w-xl sm:text-center">
+        <p className="inline-block px-3 py-px  text-3xl font-semibold font-pop tracking-wider text-teal-900 uppercase rounded bg-teal-accent-400">
+          Our Team
+        </p>
+      </div>
+      <OtherTeam />
     </div>
-
-
-
-
-    <div className="grid w-[100%] gap-5 mx-auto pb-10 sm:grid-cols-2 lg:grid-cols-5 lg:max-w-screen-lg">
-      <div>
-        <div className="hover:shadow-2xl relative  rounded-full shadow  bg-[#135858] overflow-hidden">
-          <Image
-            className="relative  w-full h-full rounded transition-transform transform scale-100 hover:scale-110"
-            src={FASIH}
-            alt="FASIH"
-          />
-        </div>
-        <div className="flex flex-col sm:text-center">
-          <p className="text-lg font-bold font-pop">Fasih Uddin</p>
-          <p className="mb-5 text-xs text-gray-800">Founder and Lead</p>
-          <div className="flex items-center  space-x-3 sm:justify-center">
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-brands fa-linkedin text-xl'></span>
-            </a>
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-brands fa-twitter text-xl'></span>
-            </a>
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-regular fa-envelope text-xl'></span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div className="hover:shadow-2xl relative  rounded-full shadow  bg-[#135858] overflow-hidden">
-          <Image
-            className="relative w-full h-full rounded transition-transform transform scale-100 hover:scale-110"
-            src={SIDRA}
-            alt="kamran ali"
-          />
-        </div>
-        <div className="flex flex-col sm:text-center">
-          <p className="text-lg font-bold font-pop">Sidra</p>
-          <p className="mb-5 text-xs text-gray-800">IT LEAD</p>
-          <div className="flex items-center space-x-3 sm:justify-center">
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-brands fa-linkedin text-xl'></span>
-            </a>
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-brands fa-twitter text-xl'></span>
-            </a>
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-regular fa-envelope text-xl'></span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div className="hover:shadow-2xl relative  rounded-full shadow  bg-[#135858] overflow-hidden">
-          <Image
-            className="relative w-full h-full rounded transition-transform transform scale-100 hover:scale-110"
-            src={ZEESHAN}
-            alt=""
-          />
-        </div>
-        <div className="flex flex-col sm:text-center">
-          <p className="text-lg font-bold">Zeeshan Ali</p>
-          <p className="mb-5 text-xs text-gray-800">Head of Marketing team</p>
-          <div className="flex items-center space-x-3 sm:justify-center">
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-brands fa-linkedin text-xl'></span>
-            </a>
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-brands fa-twitter text-xl'></span>
-            </a>
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-regular fa-envelope text-xl'></span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div className="hover:shadow-2xl relative  rounded-full shadow  bg-[#135858] overflow-hidden">
-          <Image
-            className="relative w-full h-full rounded transition-transform transform scale-100 hover:scale-110"
-            src={FARZEEN}
-            alt="Farzeen"
-          />
-        </div>
-        <div className="flex flex-col sm:text-center">
-          <p className="text-lg font-bold font-pop">Farzeen</p>
-          <p className="mb-5 text-xs text-gray-800">Head of Communications</p>
-          <div className="flex items-center space-x-3 sm:justify-center">
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-brands fa-linkedin text-xl'></span>
-            </a>
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-brands fa-twitter text-xl'></span>
-            </a>
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-regular fa-envelope text-xl'></span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div className="hover:shadow-2xl relative  rounded-full shadow  bg-[#135858] overflow-hidden">
-          <Image
-            className="relative w-full h-full rounded transition-transform transform scale-100 hover:scale-110"
-            src={FASIH}
-            alt="FASIH"
-          />
-        </div>
-        <div className="flex flex-col sm:text-center">
-          <p className="text-lg font-bold">SOMEONE</p>
-          <p className="mb-5 text-xs text-gray-800">Lead of Something...</p>
-          <div className="flex items-center space-x-3 sm:justify-center">
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-brands fa-linkedin text-xl'></span>
-            </a>
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-brands fa-twitter text-xl'></span>
-            </a>
-            <a
-              href="/"
-              className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              <span className='fa-regular fa-envelope text-xl'></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr />
-
-    {/* end of team */}
-
-    <div className="mx-auto pt-4 lg:max-w-xl sm:text-center">
-      <p className="inline-block px-3 py-px  text-3xl font-semibold font-pop tracking-wider text-teal-900 uppercase rounded bg-teal-accent-400">
-        our Team
-      </p>
-
-    </div>
-
-
-    <div class="flex flex-wrap justify-center  mx-auto py-5 sm:flex-col sm:gap-0 sm:space-x-10 md:flex-row  lg:flex-none lg:flex-row lg:space-x-10 text-center lg:max-w-screen-lg">
-      <div class="flex flex-col items-center py-4 ">
-        <div class="hover:shadow-2xl relative rounded shadow bg-[#135858] overflow-hidden">
-          <Image
-            class="relative md:w-[160px] md:h-[160px] rounded transition-transform transform scale-100 hover:scale-110"
-            src={ALISHAN}
-            alt="FASIH"
-          />
-        </div>
-        <p class="text-lg font-bold mt-3 font-pop">Ali Shan</p>
-        <p class="text-xs text-gray-800">IT and Media Team</p>
-      </div>
-
-      <div class="flex flex-col items-center py-4  mt-10 sm:mt-0">
-        <div class="hover:shadow-2xl relative rounded shadow bg-[#135858] overflow-hidden">
-          <Image
-            class="relative md:w-[160px] md:h-[160px] rounded transition-transform transform scale-100 hover:scale-110"
-            src={FASIH}
-            alt="FASIH"
-          />
-        </div>
-        <p class="text-lg font-bold mt-3 font-pop">Marta Clermont</p>
-        <p class="text-xs text-gray-800">Design Team Lead</p>
-      </div>
-
-      <div class="flex flex-col items-center py-4  mt-10 sm:mt-0">
-        <div class="hover:shadow-2xl relative rounded shadow bg-[#135858] overflow-hidden">
-          <Image
-            class="relative md:w-[160px] md:h-[160px] rounded transition-transform transform scale-100 hover:scale-110"
-            src={FASIH}
-            alt="FASIH"
-          />
-        </div>
-        <p class="text-lg font-bold mt-3 font-pop">Alice Melbourne</p>
-        <p class="text-xs text-gray-800">Human Resources</p>
-      </div>
-      <div class="flex flex-col items-center py-4  mt-10 sm:mt-0">
-        <div class="hover:shadow-2xl relative rounded shadow bg-[#135858] overflow-hidden">
-          <Image
-            class="relative md:w-[160px] md:h-[160px] rounded transition-transform transform scale-100 hover:scale-110"
-            src={FASIH}
-            alt="FASIH"
-          />
-        </div>
-        <p class="text-lg font-bold mt-3 font-pop">Alice Melbourne</p>
-        <p class="text-xs text-gray-800">Human Resources</p>
-      </div>
-
-
-      <div class="flex flex-col items-center py-4  mt-10 sm:mt-0">
-        <div class="hover:shadow-2xl relative rounded shadow bg-[#135858] overflow-hidden">
-          <Image
-            class="relative md:w-[160px] md:h-[160px] rounded transition-transform transform scale-100 hover:scale-110"
-            src={FASIH}
-            alt="FASIH"
-          />
-        </div>
-        <p class="text-lg font-bold mt-3 font-pop">Alice Melbourne</p>
-        <p class="text-xs text-gray-800">Human Resources</p>
-      </div>
-
-
-      <div class="flex flex-col items-center py-4  mt-10 sm:mt-0">
-        <div class="hover:shadow-2xl relative rounded shadow bg-[#135858] overflow-hidden">
-          <Image
-            class="relative md:w-[160px] md:h-[160px] rounded transition-transform transform scale-100 hover:scale-110"
-            src={FASIH}
-            alt="FASIH"
-          />
-        </div>
-        <p class="text-lg font-bold mt-3 font-pop">Alice Melbourne</p>
-        <p class="text-xs text-gray-800">Human Resources</p>
-      </div>
-
-
-      <div class="flex flex-col items-center py-4  mt-10 sm:mt-0">
-        <div class="hover:shadow-2xl relative rounded shadow bg-[#135858] overflow-hidden">
-          <Image
-            class="relative md:w-[160px] md:h-[160px] rounded transition-transform transform scale-100 hover:scale-110"
-            src={FASIH}
-            alt="FASIH"
-          />
-        </div>
-        <p class="text-lg font-bold mt-3 font-pop">Alice Melbourne</p>
-        <p class="text-xs text-gray-800">Human Resources</p>
-      </div>
-
-
-    </div>
-    </div>
-
-
-    );
-};
+  );
+}

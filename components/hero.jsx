@@ -18,7 +18,7 @@ export const Header = () => {
         <Swiper
         className='h-100'
           modules={[ A11y, Autoplay]}
-          
+          loop
           slidesPerView={1}
           autoplay={true}
           onSwiper={(swiper) => console.log(swiper)}
