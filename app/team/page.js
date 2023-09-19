@@ -65,6 +65,11 @@ const otherTeamMembers = [
     role: 'Human Resources',
     imageSrc: MARIA,
   },
+  {
+    name: 'Alice Melbourne',
+    role: 'Human Resources',
+    imageSrc: MARIA,
+  },
 ];
 
 function TeamMember({ name, role, imageSrc }) {
@@ -107,7 +112,7 @@ function TeamMember({ name, role, imageSrc }) {
 
 function Leads() {
   return (
-    <div className="grid w-[100%] gap-5 mx-auto pb-10 sm:grid-cols-2 lg:grid-cols-5 lg:max-w-screen-lg">
+    <div className="grid w-[100%] gap-5 mx-auto pb-10 grid-cols-2 lg:grid-cols-5 lg:max-w-screen-lg">
       {teamMembers.map((member, index) => (
         <TeamMember key={index} {...member} />
       ))}
@@ -119,7 +124,7 @@ function OtherTeam() {
   return (
     <div className="flex flex-wrap justify-center mx-auto py-5 sm:flex-col sm:gap-0 sm:space-x-10 md:flex-row lg:flex-none lg:flex-row lg:space-x-10 text-center lg:max-w-screen-lg">
       {otherTeamMembers.map((member, index) => (
-        <div key={index} className="flex flex-col items-center py-4 mt-10 sm:mt-0">
+        <div key={index} className="flex flex-col px-2 md:px-0 items-center py-4 mt-10 sm:mt-0">
           <div className="hover:shadow-2xl relative rounded shadow bg-[#135858] overflow-hidden">
             <Image
               className="relative w-[160px] h-[160px] rounded transition-transform transform scale-100 hover:scale-110"
