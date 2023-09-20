@@ -2,13 +2,18 @@ import Image from 'next/image';
 import ALISHAN from '../../public/1.png';
 import NASIR from '../../public/nasir.png';
 import FASIH from '../../public/fasih.png';
-import SIDRA from '../../public/sidra.png';
+// import SIDRA from '../../public/sidra.png';
+import SIDRA from '../../public/sid1.png';
 import FARZEEN from '../../public/farzeen.png';
 import ZEESHAN from '../../public/zeeshan.png';
 import SERENA from '../../public/serena.png';
 import ALI from '../../public/ali.png';
 import PERVEZ from '../../public/pervez.png';
-import MARIA from '../../public/maria.png';
+import Mutahar from '../../public/Mutahar.png';
+import Maria from '../../public/maria.png';
+import Rehmat from '../../public/rehmat.png';
+import Shehriyar from '../../public/shehriyar.png';
+import Aneeq from '../../public/aneeq.png';
 
 // Define an array of team members with their information
 const teamMembers = [
@@ -19,22 +24,22 @@ const teamMembers = [
   },
   {
     name: 'Sidra',
-    role: 'IT LEAD',
+    role: 'Team Media IT LEAD',
     imageSrc: SIDRA,
   },
   {
     name: 'Zeeshan Ali',
-    role: 'Head of Marketing team',
+    role: 'Team Marketing Lead',
     imageSrc: ZEESHAN,
   },
   {
     name: 'Farzeen',
-    role: 'Head of Communications',
+    role: 'Team Communication Lead',
     imageSrc: FARZEEN,
   },
   {
     name: 'Ali Mohammad',
-    role: 'Finance Lead',
+    role: 'Team Finance Lead',
     imageSrc: ALI,
   },
 ];
@@ -61,14 +66,29 @@ const otherTeamMembers = [
     imageSrc: PERVEZ,
   },
   {
-    name: 'Alice Melbourne',
-    role: 'Human Resources',
-    imageSrc: MARIA,
+    name: 'Maria',
+    role: 'Team Finance',
+    imageSrc: Maria,
   },
   {
-    name: 'Alice Melbourne',
-    role: 'Human Resources',
-    imageSrc: MARIA,
+    name: 'Mutahar',
+    role: 'Team Content Writing',
+    imageSrc: Mutahar,
+  },
+  {
+    name: 'Rehmat Karim',
+    role: 'Team Content Writing',
+    imageSrc: Rehmat,
+  },
+  {
+    name: 'Shehriyar Ali',
+    role: 'Team Human Resources',
+    imageSrc: Shehriyar,
+  },
+  {
+    name: 'Aneeq Ahmad',
+    role: 'Team Content Writing',
+    imageSrc: Aneeq,
   },
 ];
 
