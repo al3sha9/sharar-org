@@ -22,19 +22,19 @@ export default function Gallery() {
             <div class="w-1/2 p-1 md:p-2">
               <Image
                 alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
+                class="hover:shadow-2xl block h-full w-full rounded-lg object-cover object-center"
                 src={PIC1} />
             </div>
             <div class="w-1/2 p-1 md:p-2">
               <Image
                 alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
+                class="hover:shadow-2xl block h-full w-full rounded-lg object-cover object-center"
                 src={PIC2} />
             </div>
             <div class="w-full p-1 md:p-2">
               <Image
                 alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
+                class="hover:shadow-2xl block h-full w-full rounded-lg object-cover object-center"
                 src={PIC7} />
             </div>
           </div>
@@ -42,19 +42,19 @@ export default function Gallery() {
             <div class="w-full p-1 md:p-2">
               <Image
                 alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
+                class="hover:shadow-2xl block h-full w-full rounded-lg object-cover object-center"
                 src={PIC4} />
             </div>
             <div class="w-1/2 p-1 md:p-2">
               <Image
                 alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
+                class="hover:shadow-2xl block h-full w-full rounded-lg object-cover object-center"
                 src={PIC5} />
             </div>
             <div class="w-1/2 p-1 md:p-2">
               <Image
                 alt="gallery"
-                class="block h-full w-full rounded-lg object-cover object-center"
+                class="hover:shadow-2xl block h-full w-full rounded-lg object-cover object-center"
                 src={PIC6} />
             </div>
           </div>
