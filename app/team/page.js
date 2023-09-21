@@ -142,7 +142,7 @@ function Leads() {
 
 function OtherTeam() {
   return (
-    <div className="grid grid-cols-2 gap-4 sm:grid-cols-5 lg:grid-cols-5 lg:max-w-screen-lg mx-auto text-center">
+    <div className="grid grid-cols-2 md:gap-4 sm:grid-cols-5 lg:grid-cols-5 lg:max-w-screen-lg mx-auto text-center">
       {otherTeamMembers.map((member, index) => (
         <div key={index} className="flex flex-col px-2 md:px-0 items-center py-4 mt-10 sm:mt-0">
           <div className="hover:shadow-2xl relative rounded shadow bg-[#135858] overflow-hidden">
