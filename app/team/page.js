@@ -19,27 +19,27 @@ import Aneeq from '../../public/aneeq.png';
 const teamMembers = [
   {
     name: 'Fasih Uddin',
-    role: 'Founder and Lead',
+    role: 'Founder and CEO',
     imageSrc: FASIH,
   },
   {
-    name: 'Sidra',
-    role: 'Team Media IT LEAD',
+    name: 'Sidra Rehman',
+    role: 'CoFounder - Team Media IT LEAD',
     imageSrc: SIDRA,
   },
   {
     name: 'Zeeshan Ali',
-    role: 'Team Marketing Lead',
+    role: 'CoFounder - Team Planning Lead',
     imageSrc: ZEESHAN,
   },
   {
-    name: 'Farzeen',
-    role: 'Team Communication Lead',
+    name: 'Farzeen Saleem',
+    role: 'CoFounder - Team Communication Lead',
     imageSrc: FARZEEN,
   },
   {
     name: 'Ali Mohammad',
-    role: 'Team Finance Lead',
+    role: 'CoFounder - Team Finance Lead',
     imageSrc: ALI,
   },
 ];
@@ -51,12 +51,12 @@ const otherTeamMembers = [
     imageSrc: ALISHAN,
   },
   {
-    name: 'Nasir',
+    name: 'Nasir Ullah Baig',
     role: 'Team Media and IT',
     imageSrc: NASIR,
   },
   {
-    name: 'Serena',
+    name: 'Serena Akbar',
     role: 'Team Finance',
     imageSrc: SERENA,
   },
@@ -66,18 +66,18 @@ const otherTeamMembers = [
     imageSrc: PERVEZ,
   },
   {
-    name: 'Maria',
+    name: 'Maria Kousar',
     role: 'Team Finance',
     imageSrc: Maria,
   },
   {
-    name: 'Mutahar',
-    role: 'Team Content Writing',
+    name: 'Mutahar Hussain',
+    role: 'Team Communication',
     imageSrc: Mutahar,
   },
   {
     name: 'Rehmat Karim',
-    role: 'Team Content Writing',
+    role: 'Team Communication',
     imageSrc: Rehmat,
   },
   {
@@ -87,7 +87,7 @@ const otherTeamMembers = [
   },
   {
     name: 'Aneeq Ahmad',
-    role: 'Team Content Writing',
+    role: 'Team Communication',
     imageSrc: Aneeq,
   },
 ];
