@@ -37,22 +37,22 @@ export const Nav = () => {
                 title="Our product"
                 class="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
-                Features
+                Our Work
               </Link>
             </li>
             <li>
               <Link
-                href="/"
+                href="/gallery"
                 aria-label="Product pricing"
                 title="Product pricing"
                 class="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
-                Pricing
+                Gallery
               </Link>
             </li>
             <li>
               <Link
-                href="/"
+                href="/about"
                 aria-label="About us"
                 title="About us"
                 class="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -63,11 +63,11 @@ export const Nav = () => {
             <li>
               <Link
                 href="/"
-                class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                class="inline-flex items-center justify-center  h-12 px-8 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-white hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
               >
-                Sign up
+                Blog
               </Link>
             </li>
           </ul>
@@ -145,22 +145,22 @@ export const Nav = () => {
                           title="Our product"
                           class="font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Features
+                          Our Work
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/"
+                          href="/gallery"
                           aria-label="Product pricing"
                           title="Product pricing"
                           class="font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Pricing
+                          Gallery
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="/"
+                          href="/about"
                           aria-label="About us"
                           title="About us"
                           class="font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -171,11 +171,11 @@ export const Nav = () => {
                       <li>
                         <Link
                           href="/"
-                          class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#135858] focus:shadow-outline focus:outline-none"
+                          class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#135858]  focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
                         >
-                          Sign up
+                          Blog
                         </Link>
                       </li>
                     </ul>

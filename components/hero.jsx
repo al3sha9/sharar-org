@@ -1,4 +1,7 @@
 "use client"
+import IMG1 from '../public/gp01.jpg';
+import IMG2 from '../public/gp1.jpg';
+import IMG3 from '../public/gp2.jpg';
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
@@ -9,55 +12,49 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import Image from 'next/image';
 export const Header = () => {
   return (
-    <div className="relative md:h-[90.5vh]  flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
+    <div className="relative md:h-[90.5vh] flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
       <div className="inset-y-0 h-[100%] top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         
 
         <Swiper
-        className='h-100'
+        className='h-100 '
           modules={[ A11y, Autoplay]}
           loop
           slidesPerView={1}
           autoplay={true}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
         >
-          <SwiperSlide>
-            <img
-              className="object-cover w-full rounded shadow-lg lg:rounded-none lg:shadow-none  md:h-[90.5vh]"
-              src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+          <SwiperSlide className='shadow-lg '>
+            <Image
+              className="object-cover w-full rounded  lg:rounded-none lg:shadow-none  md:h-[90.5vh]"
+              src={IMG2}
               alt=""
             />
           </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="object-cover w-full rounded shadow-lg lg:rounded-none lg:shadow-none  md:h-[90.5vh]"
-              src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+          <SwiperSlide className='shadow-lg '>
+            <Image
+              className="object-cover w-full rounded  lg:rounded-none lg:shadow-none  md:h-[90.5vh]"
+              src={IMG3}
               alt=""
             />
           </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="object-cover w-full rounded shadow-lg lg:rounded-none lg:shadow-none  md:h-[90.5vh]"
-              src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="object-cover w-full rounded shadow-lg lg:rounded-none lg:shadow-none  md:h-[90.5vh]"
-              src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+          <SwiperSlide className='shadow-lg '>
+            <Image
+              className="object-cover w-full rounded  lg:rounded-none lg:shadow-none  md:h-[90.5vh]"
+              src={IMG1}
               alt=""
             />
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="relative md:h-[100vh] flex flex-col items-start justify-center w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
-        <div className="mb-16 lg:my-40   lg:max-w-lg lg:pr-5">
+      <div className='bg- py-4 md:py-0 -z-10 flex items-center'>
+      <div className="relative   flex flex-col items-start  justify-center w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-2xl">
+        <div className='flex justify-center items-center'>
+        <div className=" flex flex-col justify-center px-4 lg:my-0  md:-z-10 rounded-xl md:h-[90vh]  lg:max-w-lg ">
           
-          <h1 className="mb-5 font-sans lg:text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+          <h1 className="mb-2 font-sans lg:text-6xl font-bold tracking-tight text-gray9200 sm:text-4xl sm:leading-none">
             SHARAR
             <br className="hidden md:block" />
             {" "}
@@ -86,6 +83,11 @@ export const Header = () => {
             </a>
           </div>
         </div>
+
+        </div>
+        
+      </div>
+
       </div>
     </div>
   );
