@@ -62,7 +62,7 @@ export const Nav = () => {
             </li>
             <li>
               <Link
-                href="/"
+                href="/blog"
                 class="inline-flex items-center justify-center  h-12 px-8 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-white hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
@@ -170,7 +170,7 @@ export const Nav = () => {
                       </li>
                       <li>
                         <Link
-                          href="/"
+                          href="/blog"
                           class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#135858]  focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
