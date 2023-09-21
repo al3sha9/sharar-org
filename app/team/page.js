@@ -82,7 +82,7 @@ const otherTeamMembers = [
   },
   {
     name: 'Shehriyar Ali',
-    role: 'Team Human Resources',
+    role: 'Team Planning',
     imageSrc: Shehriyar,
   },
   {
