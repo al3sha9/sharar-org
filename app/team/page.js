@@ -102,7 +102,7 @@ function TeamMember({ name, role, imageSrc }) {
           alt={name}
         />
       </div>
-      <div className="flex flex-col sm:text-center">
+      <div className="flex flex-col text-center">
         <p className="text-lg font-bold font-pop">{name}</p>
         <p className="mb-5 text-xs text-gray-800">{role}</p>
         <div className="flex items-center space-x-3 sm:justify-center">
