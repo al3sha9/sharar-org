@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Sharar Organization',
+  // more to be added soon !!!
   description: 'Youth Organization working in Pakistan',
 }
 
