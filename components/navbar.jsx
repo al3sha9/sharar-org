@@ -25,7 +25,7 @@ export const Nav = () => {
   }, [isDrop]);
 
   return (
-    <div className="bg-[#135858]">
+    <div className="bg-[#135858] shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]  sticky top-0 z-[1000000]">
       <div class="px-4  py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
           <Link
@@ -51,9 +51,9 @@ export const Nav = () => {
             </li>
             <li>
               <Link
-                href="/"
-                aria-label="Our product"
-                title="Our product"
+                href="/work"
+                aria-label="work"
+                title="work"
                 class="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
                 Our Work
@@ -139,8 +139,6 @@ export const Nav = () => {
             <li>
               <Link
                 href="/contact"
-                rel="norefferer"
-                target="_blank"
                 aria-label="Contact Us"
                 title="Contact Us"
                 class="inline-flex items-center justify-center  h-12 px-8 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-white hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
@@ -217,9 +215,9 @@ export const Nav = () => {
                       </li>
                       <li>
                         <Link
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
+                          href="/work"
+                          aria-label="work"
+                          title="work"
                           class="font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Our Work
@@ -305,8 +303,7 @@ export const Nav = () => {
                       <li>
                         <Link
                           href="/contact"
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          
                           class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#135858]  focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
