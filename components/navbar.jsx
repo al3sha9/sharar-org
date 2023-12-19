@@ -138,14 +138,14 @@ export const Nav = () => {
             </li>
             <li>
               <Link
-                href="https://www.linkedin.com/company/sharar-organization/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BbHoFEdxxQw2dyDq6trGIow%3D%3D"
+                href="/contact"
                 rel="norefferer"
                 target="_blank"
-                aria-label="Linkedin"
-                title="Linkedin"
+                aria-label="Contact Us"
+                title="Contact Us"
                 class="inline-flex items-center justify-center  h-12 px-8 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-white hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
               >
-                Linkedin
+                Contact Us
               </Link>
             </li>
           </ul>
@@ -304,14 +304,14 @@ export const Nav = () => {
                       </li>
                       <li>
                         <Link
-                          href="https://www.linkedin.com/company/sharar-organization/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BbHoFEdxxQw2dyDq6trGIow%3D%3D"
+                          href="/contact"
                           target="_blank"
                           rel="noopener noreferrer"
                           class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#135858]  focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
                         >
-                          Linkedin
+                          Contact Us
                         </Link>
                       </li>
                     </ul>
