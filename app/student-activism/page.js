@@ -1,4 +1,5 @@
 "use client"
+import SocialMediaShare from "@/components/share";
 import { useState } from "react";
 
 
@@ -88,6 +89,7 @@ export default function BlogFirst() {
                 {data.title}
               </h1>
             </header>
+            <SocialMediaShare />
             <p className="lead py-2">{data.leadText}</p>
             {data.content.map((paragraph, index) => (
               <p className="py-2" key={index} dangerouslySetInnerHTML={{ __html: paragraph }}></p>
@@ -96,19 +98,7 @@ export default function BlogFirst() {
         </div>
       </main>
 
-      {/* Copy Button */}
-      <div className="flex justify-center flex-col border-white border-b items-center bg-[#135858] px-4 mx-auto py-4 text-white font-sans space-y-2 mt-4">
-        <h2 className='text-2xl font-bold'>Share the blog</h2>
-        <p className='text-sm'>help us spread the word :)</p>
-        <button
-          className={`${
-            copySuccess ? 'bg-white hover:bg-white' : 'bg-white hover:bg-transparent hover:text-white hover:border-white'
-          } text-green-600 border py-2 px-4 rounded`}
-          onClick={copyToClipboard}
-        >
-          {copySuccess ? 'Copied!' : 'Copy Link'}
-        </button>
-      </div>
+      
     </>
   );
 }

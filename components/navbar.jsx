@@ -1,9 +1,28 @@
 "use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useState } from "react";
 
 export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDrop, setIsDrop] = useState(false);
+
+  useEffect(() => {
+    const handleGlobalClick = () => {
+      if (isDrop) {
+        setIsDrop(false);
+      }
+    };
+
+    if (isDrop) {
+      // Attach the event listener when the dropdown is open
+      document.addEventListener("click", handleGlobalClick);
+    }
+
+    // Cleanup the event listener when the component unmounts or dropdown closes
+    return () => {
+      document.removeEventListener("click", handleGlobalClick);
+    };
+  }, [isDrop]);
 
   return (
     <div className="bg-[#135858]">
@@ -60,14 +79,73 @@ export const Nav = () => {
                 About us
               </Link>
             </li>
+            <li className="relative group ">
+              <button
+                onClick={() => setIsDrop(!isDrop)}
+                // onMouseLeave={()=> setIsDrop(isDrop)}
+                className="font-semibold transition-all justify-center items-center hover:underline tracking-wide text-white flex duration-75"
+              >
+                Blogs{" "}
+                <svg
+                  className="ms-2 text-white "
+                  width="12"
+                  height="8"
+                  viewBox="0 0 12 8"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M0.589585 1.30342C0.0670926 1.94531 0.157045 2.89232 0.793881 3.42252L4.9406 6.87489C5.54298 7.3764 6.4602 7.37377 7.05941 6.87489L11.2061 3.42252C11.843 2.89232 11.9329 1.94531 11.4104 1.30342C10.8839 0.656532 9.93347 0.562464 9.29163 1.09683L6.00001 3.83729L2.70838 1.09683C2.06654 0.562464 1.11615 0.656532 0.589585 1.30342Z"
+                    // fill="#fff"
+                  ></path>
+                </svg>
+              </button>
+
+              <div
+                className={`absolute left-[0px] z-50 mt-4 space-y-2 bg-white border text-center rounded shadow-xl transition-all duration-[400ms] ${
+                  isDrop
+                    ? "opacity-100 -left-[30px]"
+                    : "opacity-0 pointer-events-none"
+                }`}
+              >
+                <Link
+                  href="/student-activism"
+                  aria-label="student-activism"
+                  title="student-activism"
+                  className="block px-10 py-2 text-gray-800 transition-colors duration-200 hover:underline font-semibold "
+                >
+                  Activism
+                </Link>
+                <Link
+                  href="/volunterism"
+                  aria-label="Volunterism"
+                  title="Volunterism"
+                  className="block px-10 py-2 text-gray-800 transition-colors duration-200 hover:underline font-semibold "
+                >
+                  Volunterism
+                </Link>
+                <Link
+                  href="/co-profiles"
+                  aria-label="co-profiles"
+                  title="co-profiles"
+                  className="block px-10 py-2 text-gray-800 transition-colors duration-200 hover:underline font-semibold "
+                >
+                  Co-profiles
+                </Link>
+              </div>
+            </li>
             <li>
               <Link
-                href="/blog"
+                href="https://www.linkedin.com/company/sharar-organization/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BbHoFEdxxQw2dyDq6trGIow%3D%3D"
+                rel="norefferer"
+                target="_blank"
+                aria-label="Linkedin"
+                title="Linkedin"
                 class="inline-flex items-center justify-center  h-12 px-8 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-white hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                aria-label="Sign up"
-                title="Sign up"
               >
-                Blog
+                Linkedin
               </Link>
             </li>
           </ul>
@@ -104,7 +182,6 @@ export const Nav = () => {
                         title="Company"
                         class="inline-flex items-center"
                       >
-                       
                         <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                           Sharar Organization
                         </span>
@@ -168,14 +245,73 @@ export const Nav = () => {
                           About us
                         </Link>
                       </li>
+                      <li className="relative group ">
+                        <button
+                          onClick={() => setIsDrop(!isDrop)}
+                          // onMouseLeave={()=> setIsDrop(isDrop)}
+                          className="font-semibold transition-all justify-center items-center hover:underline tracking-wide text-black flex duration-75"
+                        >
+                          Blogs{" "}
+                          <svg
+                            className="ms-2 text-white "
+                            width="12"
+                            height="8"
+                            viewBox="0 0 12 8"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M0.589585 1.30342C0.0670926 1.94531 0.157045 2.89232 0.793881 3.42252L4.9406 6.87489C5.54298 7.3764 6.4602 7.37377 7.05941 6.87489L11.2061 3.42252C11.843 2.89232 11.9329 1.94531 11.4104 1.30342C10.8839 0.656532 9.93347 0.562464 9.29163 1.09683L6.00001 3.83729L2.70838 1.09683C2.06654 0.562464 1.11615 0.656532 0.589585 1.30342Z"
+                              // fill="#fff"
+                            ></path>
+                          </svg>
+                        </button>
+
+                        <div
+                          className={`absolute left-[0px] mt-4 space-y-2 bg-white border text-center rounded shadow-xl transition-all duration-[400ms] ${
+                            isDrop
+                              ? "opacity-100 -left-[30px]"
+                              : "opacity-0 pointer-events-none"
+                          }`}
+                        >
+                          <Link
+                            href="/student-activism"
+                            aria-label="student-activism"
+                            title="student-activism"
+                            className="block px-10 py-2 text-gray-800 transition-colors duration-200 hover:underline font-semibold "
+                          >
+                            student-activism
+                          </Link>
+                          <Link
+                            href="/volunterism"
+                            aria-label="Volunterism"
+                            title="Volunterism"
+                            className="block px-10 py-2 text-gray-800 transition-colors duration-200 hover:underline font-semibold "
+                          >
+                            Volunterism
+                          </Link>
+                          <Link
+                            href="/co-profiles"
+                            aria-label="co-profiles"
+                            title="co-profiles"
+                            className="block px-10 py-2 text-gray-800 transition-colors duration-200 hover:underline font-semibold "
+                          >
+                            Co-profiles
+                          </Link>
+                        </div>
+                      </li>
                       <li>
                         <Link
-                          href="/blog"
+                          href="https://www.linkedin.com/company/sharar-organization/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BbHoFEdxxQw2dyDq6trGIow%3D%3D"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#135858]  focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
                         >
-                          Blog
+                          Linkedin
                         </Link>
                       </li>
                     </ul>
