@@ -3,13 +3,12 @@ import SocialMediaShare from "@/components/share";
 import { useState } from "react";
 
 
-
 const data = {
     author: {
         name: "Farzeen",
         role: "Team Sharar",
         date: "Feb. 8, 9023",
-        imageSrc: "https://shararpakistan.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.f33fe617.png&w=1080&q=75",
+        imageSrc: "https://shararpakistan.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffarzeen.0f7bfa63.png&w=1080&q=75",
         wall: "https://images.hdqwalls.com/wallpapers/student-study-stress-img.jpg",
     },
     title: "The Crucial Role of Co-Curricular Profiles for Students",

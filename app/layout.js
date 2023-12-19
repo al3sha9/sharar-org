@@ -4,8 +4,14 @@ import { Inter } from 'next/font/google'
 import { Footer } from '@/components/footer'
 import Head from 'next/head';
 import FAV from './fav.ico'
+import { Poppins } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
 
 export const metadata = {
   title: 'Sharar Organization',
@@ -27,7 +33,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image:height" content="627" />
         <link rel="icon" href={FAV} /> 
       </Head>
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <Nav />
         {children}
         <Footer />

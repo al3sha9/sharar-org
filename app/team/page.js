@@ -1,10 +1,11 @@
 import Image from 'next/image';
-import ALISHAN from '../../public/1.png';
+import ALISHAN from '../../public/all.png';
 import NASIR from '../../public/nasir.png';
 import FASIH from '../../public/fasih.png';
 // import SIDRA from '../../public/sidra.png';
 import SIDRA from '../../public/sid1.png';
 import FARZEEN from '../../public/farzeen.png';
+import Aneeq from '../../public/aneeq.png';
 import ZEESHAN from '../../public/zeeshan.png';
 import SERENA from '../../public/serena.png';
 import ALI from '../../public/ali.png';
@@ -13,7 +14,6 @@ import Mutahar from '../../public/Mutahar.png';
 import Maria from '../../public/maria.png';
 import Rehmat from '../../public/rehmat.png';
 import Shehriyar from '../../public/shehriyar.png';
-import Aneeq from '../../public/aneeq.png';
 
 // Define an array of team members with their information
 const teamMembers = [

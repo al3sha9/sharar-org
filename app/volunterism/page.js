@@ -9,7 +9,7 @@ const data = {
         name: "Anique Ahmed",
         role: "Team Sharar",
         date: "Feb. 8, 9023",
-        imageSrc: "https://shararpakistan.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.f33fe617.png&w=1080&q=75",
+        imageSrc: "https://shararpakistan.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faneeq.468bb149.png&w=1080&q=75",
         wall: "https://images.hdqwalls.com/wallpapers/student-study-stress-img.jpg",
     },
     title: "The Power of Volunteerism: Creating Positive Change Together",
