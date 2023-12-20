@@ -18,7 +18,7 @@ export default function About() {
 
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div className="order-1 w-5/12"></div>
-                    <div className="z-20 flex items-center order-1 bg-[#135858] shadow-xl w-8 h-8 rounded-full">
+                    <div className="z-10 flex items-center order-1 bg-[#135858] shadow-xl w-8 h-8 rounded-full">
                         <h1 className="mx-auto text-white font-semibold text-lg">2</h1>
                     </div>
                     <div className="order-1 bg-[#135858d9] rounded-lg shadow-xl w-5/12 px-6 py-4 md:flex md:flex-col md:mx-auto">
@@ -29,18 +29,18 @@ export default function About() {
 
                 <div className="mb-8 flex justify-between items-center w-full right-timeline">
                     <div className="order-1 w-5/12"></div>
-                    <div className="z-20 flex items-center order-1 bg-[#135858] shadow-xl w-8 h-8 rounded-full">
+                    <div className="z-10 flex items-center order-1 bg-[#135858] shadow-xl w-8 h-8 rounded-full">
                         <h1 className="mx-auto font-semibold text-lg text-white">3</h1>
                     </div>
                     <div className="order-1 bg-[#135858d9] rounded-lg shadow-xl w-5/12 px-6 py-4 md:flex md:flex-col md:mx-auto">
-                        <h3 className="mb-3 font-bold text-gray-200 text-xl">Lorem Ipsum</h3>
-                        <p className="text-sm leading-snug tracking-wide text-gray-200 text-opacity-100">hello.</p>
+                        <h3 className="mb-3 font-bold text-gray-100 text-xl">Lorem Ipsum</h3>
+                        <p className="text-sm leading-snug tracking-wide text-gray-100 text-opacity-100">hello.</p>
                     </div>
                 </div>
 
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div className="order-1 w-5/12"></div>
-                    <div className="z-20 flex items-center order-1 bg-[#135858] shadow-xl w-8 h-8 rounded-full">
+                    <div className="z-10 flex items-center order-1 bg-[#135858] shadow-xl w-8 h-8 rounded-full">
                         <h1 className="mx-auto text-white font-semibold text-lg">4</h1>
                     </div>
                     <div className="order-1 bg-[#135858d9] rounded-lg shadow-xl w-5/12 px-6 py-4 md:flex md:flex-col md:mx-auto">
