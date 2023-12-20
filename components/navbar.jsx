@@ -25,8 +25,8 @@ export const Nav = () => {
   }, [isDrop]);
 
   return (
-    <div className="bg-[#135858] shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]  sticky top-0 z-[1000000]">
-      <div class="px-4  py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div className="bg-[#135858] shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]   top-0 z-[1000000]">
+      <div class="px-4  py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div class="relative flex items-center justify-between">
           <Link
             href="/"

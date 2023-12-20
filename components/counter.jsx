@@ -27,7 +27,7 @@ export const Traction = () => {
           </div>
           <div className="md:w-1/5 w-1/2 text-center py-3 md:py-0">
             <CountUp
-              end={2000}
+              end={200}
               duration={2.75}
               separator=" "
               suffix="+"
