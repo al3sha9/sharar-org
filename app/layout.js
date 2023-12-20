@@ -3,7 +3,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { Footer } from '@/components/footer'
 import Head from 'next/head';
-import FAV from './fav.ico'
+// import FAV from './fav.ico'
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="https://alshan-brutal.vercel.aoo" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="627" />
-        <link rel="icon" href={FAV} /> 
+        {/* <link rel="icon" href={FAV} />  */}
       </Head>
       <body className={poppins.className}>
         <Nav />
