@@ -79,7 +79,7 @@ export const Header = () => {
                 THROUGH
                 <br className="hidden md:block" />{" "}
                 <span className="inline-block text-[#135858]">
-                  YOUTHEMPOVERMENT
+                  YOUTH
                 </span>
               </h1>
             </div>
