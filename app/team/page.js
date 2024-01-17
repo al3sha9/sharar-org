@@ -13,7 +13,7 @@ import PERVEZ from '../../public/pervez.png';
 import Mutahar from '../../public/Mutahar.png';
 import Maria from '../../public/maria.png';
 import Rehmat from '../../public/rehmat.png';
-import FAR from '../../public/fariha.png';
+import FAR from '../../public/farih.png';
 import Shehriyar from '../../public/shehriyar.png';
 
 // Define an array of team members with their information
