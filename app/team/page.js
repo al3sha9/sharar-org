@@ -13,6 +13,7 @@ import PERVEZ from '../../public/pervez.png';
 import Mutahar from '../../public/Mutahar.png';
 import Maria from '../../public/maria.png';
 import Rehmat from '../../public/rehmat.png';
+import FAR from '../../public/fariha.png';
 import Shehriyar from '../../public/shehriyar.png';
 
 // Define an array of team members with their information
@@ -64,6 +65,11 @@ const otherTeamMembers = [
     name: 'Pervez Uddin',
     role: 'Team Media and IT',
     imageSrc: PERVEZ,
+  },
+  {
+    name: 'Fariha Zahir',
+    role: 'Team HR',
+    imageSrc: FAR,
   },
   {
     name: 'Maria Kousar',
