@@ -16,6 +16,8 @@ import Rehmat from '../../public/rehmat.png';
 import FAR from '../../public/farih.png';
 import Shehriyar from '../../public/shehriyar.png';
 
+// team
+
 // Define an array of team members with their information
 const teamMembers = [
   {
